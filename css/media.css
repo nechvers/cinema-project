@@ -1,0 +1,130 @@
+@media (max-width: 1200px) {
+  .container{
+    max-width: 960px;
+  }
+
+  .select-cinema{
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container{
+    max-width: 750px;
+  }
+  .menu{
+    gap: 20px;
+  }
+  .session{
+    flex-wrap: wrap;
+  }
+  .select{
+    margin-top: 0;
+  }
+
+  .session-date{
+    margin-bottom: 40px;
+  }
+  .session-time{
+    order: 2;
+  }
+  .session-cinema{
+    order: 3;
+  }
+}
+
+@media (max-width: 780px){
+  .container{
+    max-width: 560px;
+  }
+  .menu{
+    position: absolute;
+    left: 0;
+    top: 40px;
+    padding: 20px;
+    margin: 0;
+    margin-left: 20px;
+    flex-direction: column;
+    background-color: #621402;
+    z-index: 9;
+    border-radius: 10px;
+    gap: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20%);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  .m-menu{
+    display: block;
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .is-open{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .film-description{
+    margin-right: 30px;
+  }
+  .film{
+    flex-direction: column;
+  }
+  .film-trailer{
+    margin: 50px auto
+  }
+}
+
+@media (max-width: 600px){
+  .header{
+    padding-bottom: 0;
+  }
+  .legend{
+    gap: 15px;
+  }
+
+  .legend > *{
+    gap: 5px;
+  }
+
+  .legend-svg{
+    width: 15px;
+    height: 15px;
+  }
+
+  .button{
+    padding: 12px 12px;
+  }
+  .select{
+    padding: 10px;
+  }
+  .price-tag{
+    font-size: 40px;
+  }
+  .session-time{
+    margin-bottom: 40px;
+    margin-right: 20px;
+  }
+  .session-month{
+    font-size: 14px;
+  }
+  .session-day{
+    font-size: 20px;
+  }
+  .session-week{
+    font-size: 14px;
+  }
+  .session-date-item{
+    max-width: 70px;
+    max-height: 70px;
+  }
+  .session-date{
+    margin-right: 20px;
+  }
+}

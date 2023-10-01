@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+.none{
+  display: none;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #621402;
@@ -10,13 +14,18 @@ body {
 
 .container {
   max-width: 1170px;
-  margin: 0 auto;
+  margin: 0 auto; 
+  width: 90%;
 }
 
 .header {
-  min-height: 100vh;
+  padding-bottom: 60px;
   background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%),
     url("/img/header/bg.jpg") no-repeat center top / cover;
+}
+
+.nav{
+  position: relative;
 }
 
 .navbar {
@@ -30,6 +39,10 @@ body {
   display: flex;
   gap: 25px;
   margin-left: 17px;
+}
+
+.m-menu{
+  display: none;
 }
 
 .menu-link {
@@ -191,13 +204,17 @@ body {
 }
 
 .select-cinema {
-  min-width: 470px;
+  max-width: 470px;
 }
 
 .scheme {
   border-radius: 10px;
   background: rgba(36, 36, 36, 0.18);
   margin-bottom: 40px;
+}
+
+.scheme-svg{
+  max-width: 1170px;
 }
 
 .scheme path:not(.light) {
@@ -226,6 +243,7 @@ body {
   gap: 30px;
   border-top: 1px solid rgba(225, 225, 225, 0.5);
   max-width: 1024px;
+  width: 90%;
   margin: auto;
   padding-top: 22px;
   padding-bottom: 38px;
